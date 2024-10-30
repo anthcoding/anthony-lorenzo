@@ -6,7 +6,7 @@ import { IoMdArrowRoundBack } from 'react-icons/io';
 const Projects = () => {
   return (
     <div className="mt-5">
-      <div className="flex flex-col md:flex-row border-b-[.3px] dark:border-neutral-800 border-neutral-300 pb-2">
+      <div className="flex flex-row border-b-[.3px] dark:border-neutral-800 border-neutral-300 pb-2">
         <p className="text-neutral-600 dark:text-neutral-400 text-sm my-auto mr-5">
           Year
         </p>
@@ -26,14 +26,14 @@ const Projects = () => {
           target="_blank"
           href={`${project.link}`}
         >
-          <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
+          <div className="w-full flex flex-row space-x-0 md:space-x-2">
             <p className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm my-auto mr-2">
               {project.year}
             </p>
-            <p className="text-neutral-900 dark:text-neutral-100 tracking-tight mr-2 w-[12%]">
+            <p className="text-neutral-900 dark:text-neutral-100 tracking-tight mr-2 w-[16%] md:w-[12%] my-auto">
               {project.title}
             </p>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap gap-1">
               {project.tech.map((tech) => (
                 <span
                   key={tech}

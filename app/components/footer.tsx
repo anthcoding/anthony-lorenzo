@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     <footer className="mb-16">
-      <ul className="group font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
+      <ul className="group font-sm mt-8 flex items-center space-x-0 text-neutral-600 md:space-x-4 md:space-y-0 dark:text-neutral-300">
         {links.map((link, index) => (
           <li
             key={index}
